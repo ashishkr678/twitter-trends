@@ -30,19 +30,19 @@ def fetch_trending_topics():
     driver.get("https://twitter.com/login")
     
     # Login to Twitter
-    sleep(10)
+    sleep(4)
     driver.find_element(By.XPATH,"//input[@name='text']").send_keys(username)
     driver.find_element(By.XPATH, "//span[contains(text(),'Next')]").click()
 
-    sleep(5)
+    sleep(4)
     driver.find_element(By.XPATH,"//input[@name='password']").send_keys(password)
     driver.find_element(By.XPATH, "//span[contains(text(),'Log in')]").click()
     
-    sleep(10)
+    sleep(4)
     # Fetch trending topics    
     driver.find_element(By.XPATH,"//*[@id='react-root']/div/div/div[2]/main/div/div/div/div[2]/div/div[2]/div/div/div/div[4]/div/section/div/div/div[8]/div/a").click()
     
-    sleep(5)
+    sleep(4)
     trends = driver.find_elements(By.XPATH,"//span[@dir='ltr']")
     top_5_trends = [trend.text for trend in trends[:5] if trend.text.strip()]
 
