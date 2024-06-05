@@ -23,3 +23,5 @@ def show_results():
     latest_record = collection.find().sort('_id', -1).limit(1)[0]
     return render_template('results.html', data=latest_record)
 
+if __name__ == "__main__":
+    app.run(debug=True)
