@@ -7,9 +7,9 @@ import uuid
 import requests
 
 # MongoDB setup
-client = pymongo.MongoClient('mongodb://localhost:27017/')
-db = client['twitter_trends_scrapping']
-collection = db['top_trends']
+# client = pymongo.MongoClient('mongodb://localhost:27017/')
+# db = client['twitter_trends_scrapping']
+# collection = db['top_trends']
 
 # ProxyMesh setup
 # proxy_mesh_url = 'http://USERNAME:PASSWORD@us-il.proxymesh.com:31280'
