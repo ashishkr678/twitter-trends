@@ -5,9 +5,9 @@ from pymongo import MongoClient
 app = Flask(__name__)
 
 # MongoDB setup
-# client = MongoClient("mongodb://localhost:27017/")
-# db = client['twitter_trends_scrapping']
-# collection = db['top_trends']
+client = MongoClient("mongodb://localhost:27017/")
+db = client['twitter_trends_scrapping']
+collection = db['top_trends']
 
 @app.route('/')
 def index():
