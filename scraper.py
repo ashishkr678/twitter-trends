@@ -1,13 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import pymongo
+from pymongo import MongoClient
 from time import sleep
 import time
 import uuid
 import requests
 
 # MongoDB setup
-client = pymongo.MongoClient('mongodb+srv://ashishsharma0t:7Ci23JnVpbRUASeM@trends.qfdl1lb.mongodb.net/?retryWrites=true&w=majority&appName=trends')
+client = MongoClient('mongodb+srv://ashishsharma0t:7Ci23JnVpbRUASeM@trends.qfdl1lb.mongodb.net/?retryWrites=true&w=majority&appName=trends')
 db = client['twitter_trends']
 collection = db['top_5_trends']
 
