@@ -5,7 +5,7 @@ from pymongo import MongoClient
 app = Flask(__name__)
 
 # MongoDB setup
-client = MongoClient('mongodb+srv://ashishsharma0t:7Ci23JnVpbRUASeM@trends.qfdl1lb.mongodb.net/?retryWrites=true&w=majority&appName=trends')
+client = MongoClient('MONGODB_URL')
 db = client['twitter_trends']
 collection = db['top_5_trends']
 
