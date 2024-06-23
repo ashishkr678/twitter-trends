@@ -7,19 +7,19 @@ import uuid
 import requests
 
 # MongoDB setup
-client = MongoClient('mongodb+srv://ashishsharma0t:7Ci23JnVpbRUASeM@trends.qfdl1lb.mongodb.net/?retryWrites=true&w=majority&appName=trends')
+client = MongoClient('MONGODB_URL')
 db = client['twitter_trends']
 collection = db['top_5_trends']
 
 # ProxyMesh setup
-# proxy_mesh_url = 'http://USERNAME:PASSWORD@us-il.proxymesh.com:31280'
+proxy_mesh_url = 'http://USERNAME:PASSWORD@us-il.proxymesh.com:31280'
 
 # Unique ID
 unique_id = str(uuid.uuid4())
 
 # Twitter credentials
-username = "s_ashish01"
-password = "Ashish810@"
+username = "YOUR'S USERNAME"
+password = "YOUR'S PASSWORD"
 
 def fetch_trending_topics():
     # options = webdriver.ChromeOptions()
